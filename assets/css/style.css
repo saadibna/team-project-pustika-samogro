@@ -1,0 +1,101 @@
+.hr{
+    margin: 0px 0px 1rem 0px;
+    width: 70%;
+    height: 2px;
+    border-bottom: 2px solid black;
+}
+.underline li{
+    border-bottom: 1px solid black;
+    margin-top: 0rem;
+    padding-bottom: 5px;
+   
+}
+.write{
+    font-size: 14px;
+}
+.write2{
+    font-size: 18px;
+}
+#subs{
+    border: 3px solid #c45223;
+}
+#basic-addon2{
+    background: #c45223;
+    border: 3px solid #c45223;
+    color: #fff;
+}
+
+.list-unstyled .fa{
+    padding:0px;
+    width: 16px;
+}
+.br .fa{
+    padding:0px;
+    margin-right: 10px;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .facebook a:hover {
+      opacity: 1;
+      background: white;
+      color: #3B5998;
+      border:1px solid #3B5998;
+      text-shadow: 0px 0px #d4d4d4, 1px 1px #d4d4d4, 2px 2px #d4d4d4,3px 3px 		#d4d4d4,4px 4px #d4d4d4,4px 4px #d4d4d4;
+  }
+  
+  .twitter a:hover {
+      opacity: 1;
+      background: white;
+      color: #55ACEE;
+      border:1px solid #55ACEE;
+      text-shadow: 0px 0px #d4d4d4, 1px 1px #d4d4d4, 2px 2px #d4d4d4,3px 3px 		#d4d4d4,4px 4px #d4d4d4,4px 4px #d4d4d4;
+  }
+  .youtube a:hover {
+      opacity: 1;
+      background: white;
+      color: #bb0000;
+      border:1px solid #bb0000;
+      text-shadow: 0px 0px #d4d4d4, 1px 1px #d4d4d4, 2px 2px #d4d4d4,3px 3px 		#d4d4d4,4px 4px #d4d4d4,4px 4px #d4d4d4;
+  }
+  .pinterest a:hover {
+      opacity: 1;
+      background: white;
+      color: #cb2027;
+      border:1px solid #cb2027;
+      text-shadow: 0px 0px #d4d4d4, 1px 1px #d4d4d4, 2px 2px #d4d4d4,3px 3px 		#d4d4d4,4px 4px #d4d4d4,4px 4px #d4d4d4;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .social{
+  list-style-type: none;}
+  .social li{ float: left;}
