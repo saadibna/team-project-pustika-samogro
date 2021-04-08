@@ -1,0 +1,4002 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> kanamachi.com</title>
+	<link rel="icon" href="demo_icon.gif" type="image/png" sizes="32x32">
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- Main Css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/75b60e16e5.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	
+
+
+</head>
+<body>
+
+ <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/ma.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/ma.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>মা</h3>
+				   <p>বিষয়ঃ<span>#4 Best Seller</span>  </p>
+				   <p>লেখকঃ <span>ম্যাক্সিম গোর্কি</span></p>
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳222.00</span></b> <span class="amount-strike"><strike>৳300.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. ম্যাক্সিম গোর্কি
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">গুড প্যারেন্টিং : সন্তান প্রতিপালনে সফল হওয়া</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বড় হবে ঝিলমিল</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">নিয়ান</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">একটুখানি বিজ্ঞান</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> 
+              
+
+
+<!-- <h1>2nd book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1504_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1504_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>নাট্যসমগ্র</h3>
+				   <p>বিষয়ঃ<span> নাটকের বই </span>  </p>
+				   <p>লেখকঃ <span>উইলিয়াম শেক্সপীয়ার</span></p>
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳2259.00</span></b> <span class="amount-strike"><strike>৳350.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				উইলিয়াম শেক্সপীয়ারকে শুধু সাহিত্যিক বললে ঠিক বােঝা যাবে না। তিনি একসঙ্গে অনেক কিছু ছিলেন : কবি, নাট্যকার, নাট্যপরিচালক, অভিনেতা। তঁাকে ইংলন্ডের জাতীয় কবি আর অ্যাভ-এর ‘চারণ কবি হিসেবে গণ্য করা হয়। ৩৮টি নাটক, ১৫৪টি সনেট বা চতুর্দশপদী কবিতা, ২টি সুদীর্ঘ গাথা-কবিতা ইত্যাদি তিনি রচনা করে গেছেন। পৃথিবীতে যে-ক'টি প্রধান ভাষা (বাংলা ভাষা সমেত) রয়েছে তার। প্রত্যেকটিতে তার নাটক হয় অনুবাদে, নয়তাে সে সবের ছায়া অবলম্বনে লিখিত অন্য নাটকের মাধ্যমে জনগণের মধ্যে প্রচারিত ও পঠিত হয়েছে, জনপ্রিয়তা অর্জন করেছে। শুধু তাঁরই নাটক পৃথিবী জুড়ে চার শ'বছর ধরে যত মঞ্চস্থ হয়েছে আর কারও নাটক তত অভিনীত হয়নি।
+			  </div>
+			   
+				
+			  
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					<div class="fotter">	
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. 1. উইলিয়াম শেক্সপীয়ার
+			  </div>
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1405_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">মহর্ষি মনোরঞ্জন ভট্টাচার্য: জীবন ও নাটক</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">কল্যাণ মিত্রের নাটক সমগ্র -১,২,৩</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_976_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">ক্ষ্যাপা: ইশরাত নিশাত স্মরণ সংখ্যা</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_251_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">ক্রাচের কর্ণেল (নাট্যরূপ)</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section>  -->
+
+<!-- <h1>3rd book</h1> -->
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1503_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1503_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>বঙ্গবন্ধু শেখ মুজিবুর রহমান জনক আমার নেতা আমার</h3>
+				   <p>বিষয়ঃ<span>  রাজনীতি ও রাজনীতিবিদ বিষয়ক প্রবন্ধ   </span>  </p>
+				   <p>লেখকঃ <span>শেখ হাসিনা</span></p>
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳499.00</span></b> <span class="amount-strike"><strike>৳675.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+					হাজার বছরের শ্রেষ্ঠ বাঙালি বঙ্গবন্ধু শেখ মুজিবুর রহমানের জ্যেষ্ঠ কন্যা শুধু নন; শেখ হাসিনা তার যােগ্য উত্তরসূরিও বটে। ১৯৭৫ সালের ১৫ই আগস্টের নৃশংস হত্যাকাণ্ডে সপরিবারে বঙ্গবন্ধুর শাহাদাতণের সময় বিদেশে অবস্থানের কারণে বেঁচে যান তার দুই সন্তান-শেখ হাসিনা ও শেখ রেহানা। ১৯৮১ সালে স্বদেশ প্রত্যাবর্তন করে বঙ্গবন্ধুর স্বপ্নের অসাম্প্রদায়িক-শােষণমুক্ত-গণতান্ত্রিক সােনার বাংলা প্রতিষ্ঠার সংগ্রামে তিনি এক ক্লান্তিহীন যােদ্ধা। চারবার গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের প্রধানমন্ত্রী নির্বাচিত হওয়ার পাশাপাশি শেখ হাসিনা আজ এক বিশ্বনেতার নাম। শান্তি, উন্নয়ন ও গণতন্ত্রের অভিযাত্রায় অনন্য অবদানের স্বীকৃতিস্বরূপ নানা পুরস্কার ও সম্মাননায় ভূষিত শেখ হাসিনা একজন অসাধারণ লেখকও। ১৯৮৯ সালে তাঁর প্রথম বই ওরা টোকাই কেন প্রকাশিত হয়। এখন পর্যন্ত তার বেশ কিছু মৌলিক ও সম্পাদিত বই এবং রচনাসমগ্র প্রকাশিত হয়েছে। নিজের বইয়ের পাশাপাশি তিনি লিখেছেন বঙ্গবন্ধুর বই এবং বঙ্গবন্ধু সম্পর্কিত বইয়ের বিশদ ভূমিকা।। চারুলিপি প্রকাশন প্রথমবারের মতাে বঙ্গবন্ধু, তাঁর পরিবার এবং এ সম্পর্কিত প্রাসঙ্গিক শেখ হাসিনার সমুদয় রচনার একত্রিত রূপ ‘বঙ্গবন্ধু শেখ মুজিবুর রহমান : জনক আমার নেতা আমার শিরােনামে প্রকাশ করল। এই বইয়ে পাঠক বঙ্গবন্ধুর জীবনকথা ও সংগ্রামগাথার সমান্তরালে খুঁজে পাবেন গােটা বাঙালি জাতির উন্মেষকথা ও বিজয়গাথা কারণ বঙ্গবন্ধু ও বাংলাদেশ এক ও অভিন্ন। পাশাপাশি ১৫ই আগস্ট ১৯৭৫-এর কালাে অধ্যায়, হত্যাকাণ্ডের বিচারের মাধ্যমে বাঙালির কলঙ্কমােচন ও শেখ হাসিনার নেতৃত্বে বঙ্গবন্ধুর বাংলাদেশের ঘুরে দাঁড়াবার গল্পও খুঁজে পাওয়া যাবে। বঙ্গবন্ধুর জন্মশতবর্ষে বঙ্গবন্ধু শেখ মুজিবুর রহমান : জনক আমার নেতা আমার বই প্রতিটি বাঙালি পাঠকের জন্যই এক অনন্য উপহার।
+			  </div>
+			   
+				
+			  
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					<div class="fotter">	
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>বঙ্গবন্ধু শেখ মুজিবুর রহমান জনক আমার নেতা আমার</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>শেখ হাসিনা</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> 	চারুলিপি প্রকাশন</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>	1st Published, 2020</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>97898459828567</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>500</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. শেখ হাসিনা
+শেখ হাসিনা, আধুনিক বাংলাদেশে সবচেয়ে বড় নাম, ডিজিটাল বাংলাদেশের রূপকার, জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানের সুযোগ্য কন্যা। ১৯৯৬, ২০০৮, ২০১৪ এবং সর্বশেষ ২০১৯ সালের জাতীয় সংসদ নির্বাচনে জয়লাভের মাধ্যমে চতুর্থবারের মতো বাংলাদেশের প্রধানমন্ত্রী হিসেবে দায়িত্ব পালন করছেন এই প্রজন্মান্তরের ঝানু রাজনীতিবিদ। তার দূরদৃষ্টি এবং দক্ষ নেতৃত্বে বাংলাদেশ আওয়ামী লীগ সংসদে একক সংখ্যাগরিষ্ঠতা নিয়ে বাংলাদেশের সবচেয়ে বড় এবং সফলতম রাজনৈতিক দলে পরিণত হয়েছে। বিশ্বে নারী নেতৃত্বের রোল মডেলে পরিণত হওয়া শেখ হাসিনা ফোর্বস ম্যাগাজিনের ১০০ ক্ষমতাধর নারীর তালিকায় একাধিকবার অন্তর্ভুক্ত হয়েছেন। যুক্তরাষ্ট্রভিত্তিক ‘ফরেন পলিসি’ ম্যাগাজিনের বৈশ্বিক ১০০ চিন্তাবিদের মাঝেও তিনি একজন। বোস্টন বিশ্ববিদ্যালয়, ওয়াসেদা বিশ্ববিদ্যালয়, অ্যবার্টয় বিশ্ববিদ্যালয় সহ বিশ্বের অনেক নামীদামী বিশ্ববিদ্যালয় থেকে সম্মানসূচক ডক্টরেট লাভ করেছেন। শেখ হাসিনার জন্ম ১৯৪৭ সালের ২৮ সেপ্টেম্বর গোপালগঞ্জ জেলার টুঙ্গিপাড়ায়। বাংলাদেশের প্রথম রাষ্ট্রপতি, জাতির জনক বঙ্গবন্ধু শেখ মুজিবুর রহমান এবং বঙ্গমাতা বেগম ফজিলাতুন্নেসার জ্যেষ্ঠ্য সন্তান শেখ হাসিনা টুঙ্গিপাড়াতেই প্রাথমিক শিক্ষা অর্জন করেন। পরবর্তীতে ঢাকার আজিমপুরে মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষা সমাপ্ত করে ঢাকা বিশ্ববিদ্যালয়ে স্নাতক সম্পন্ন করেন। ১৯৭৫ সালের ১৫ই আগস্ট জাতির পিতাকে নির্মমভাবে সপরিবারে হত্যা করা হলে নেতৃত্বশূন্য হয়ে পড়ে আওয়ামী লীগ। ১৯৮১ সালে দেশে ফিরে এই শূন্যতা পূরণ করেন শেখ হাসিনা। সেই থেকে আজ পর্যন্ত দলের হাল ধরে আছেন তিনি। শেখ হাসিনাকে নিয়ে লেখা বই এর মাঝে উল্লেখযোগ্য একটি বই হলো মিসরীয় সাংবাদিক মুহসীনের লেখা ‘শেখ হাসিনা: উপাখ্যান ও বাস্তবতা’। তিনি নিজেও বেশ কিছু বই লিখেছেন। শেখ হাসিনা এর বই সমূহ সমকালীন রাজনীতি, গণতন্ত্র, সংকট ও তার সমাধান ইত্যাদির প্রামাণ্য দলিলের মতো। শেখ হাসিনার বই ‘শেখ মুজিব আমার পিতা’ জাতির জনককে নিয়ে তার শ্রেষ্ঠ রচনা। এছাড়াও ‘নির্বাচিত প্রবন্ধ’, ‘বাংলাদেশ জাতীয় সংসদে বঙ্গবন্ধু শেখ মুজিবুর রহমান’, ‘বাংলাদেশে স্বৈরতন্ত্রের জন্ম’, ‘বিপণ্ণ গণতন্ত্র, লাঞ্ছিত মানবতা’ ইত্যাদি বই নিয়ে সমৃদ্ধ শেখ হাসিনা এর বই সমগ্র।
+			  </div>
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2739_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বঙ্গবন্ধুর শিক্ষা ভাবনা</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1960_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বিশ্ব রাজনীতির ১০০ বছর</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1960_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বঙ্গবন্ধুর সঙ্গে আলাপ ও অন্যান্য প্রসঙ্গ</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1049_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">প্রতিরোধ ও বিউপনিবেশীকরণ</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+<!-- <h2>4th book</h2> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1463_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1463_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>সিরাতে রাসুলুল্লাহ (সা.)
+					মহানবী সাঃ এর মৃত্যুর পর লেখা প্রথম বিশদ জীবনী
+				   </h3>
+				   <p>বিষয়ঃ<span>  সীরাতে রাসুল     </span>  </p>
+				   <p>লেখকঃ <span>গোলাম মোস্তফা (বাঙালি কবি) </span></p>
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳280.00</span></b> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+					
+			  </div>
+			   
+				
+			  
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					<div class="fotter">	
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>বিশ্বনবী (হযরত রসূল (স:) এর জীবনী)</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>গোলাম মোস্তফা (বাঙালি কবি)</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> 	চারুলিপি প্রকাশন</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>	1st Published, 2020</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>97898459828567</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>500</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. গোলাম মোস্তফা (বাঙালি কবি)
+			  </div>
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1467_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">মহানবী</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1271_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">সিরাতে রাসুলুল্লাহ (সা.)</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+<!-- <h1>5th book</h1> -->   
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1444_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1444_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>দেবী</h3>
+				   <p>বিষয়ঃ<span> অতিপ্রাকৃত ও ভৌতিক  </span>  </p>
+				   <p>লেখকঃ <span>  </span></p>
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳111.00</span></b> <span class="amount-strike"><strike>৳150.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. ম্যাক্সিম গোর্কি
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">গুড প্যারেন্টিং : সন্তান প্রতিপালনে সফল হওয়া</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বড় হবে ঝিলমিল</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">নিয়ান</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">একটুখানি বিজ্ঞান</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+
+<!-- <h1>6th book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1441_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1441_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>কৃষ্ণপক্ষ</h3>
+
+					
+				   <p>বিষয়ঃ <u><span> রোমান্টিক উপন্যাস   </span></u> </p>
+				   <p>লেখকঃ<u> <span>  </span></u></p>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳111.00</span></b> <span class="amount-strike"><strike>৳150.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. ম্যাক্সিম গোর্কি
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">গুড প্যারেন্টিং : সন্তান প্রতিপালনে সফল হওয়া</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বড় হবে ঝিলমিল</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">নিয়ান</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">একটুখানি বিজ্ঞান</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+
+
+<!-- <h1>7th book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1403_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1403_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>বাংলাদেশের উপন্যাসে পুরাণ ও ইতিহাস</h3>
+
+					
+				   <p>বিষয়ঃ <u><span>  সাহিত্য সমালোচনা     </span></u> </p>
+				   <p>লেখকঃ<u> <span> ড. মুজাহিদ বিল্লাহ ফারুকী </span></u></p>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳296.00</span></b> <span class="amount-strike"><strike>৳350.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. ড. মুজাহিদ বিল্লাহ ফারুকী
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2292_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">
+							তলস্তয় ও সোফিয়ার সম্পর্কের সৌন্দর্য উদ্ধার</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">চাবিকাঠির খোঁজে: নতুন আলোকে জীবনানন্দের</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">জাক দেরিদা পাঠ ও বিবেচনা</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				 
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+
+<!-- <h1>8th book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1395_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1395_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>মঞ্চনাটকে দর্শক</h3>
+
+					
+				   <p>বিষয়ঃ <u><span>   প্রি অর্ডার       </span></u> </p>
+				   <p>লেখকঃ<u> <span>মো. শওকত হোসেন </span></u></p>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳2140.00</span></b> <span class="amount-strike"><strike>৳190.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. মো. শওকত হোসেন
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1049_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title"> সীরাত স্মারক-২০২১</p>
+						
+                                   
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_3768_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">নীল ফড়িং</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_3585_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">জাক দেরিদা পাঠ ও বিবেচনা</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_3583_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">চাবিকাঠির খোঁজে: নতুন আলোকে জীবনানন্দের</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section>  -->
+ <!-- <h1>9th book</h1> -->
+
+ <!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1394_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1394_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>দ্বিতীয় জীবন</h3>
+				   <p>বিষয়ঃ <u><span> সমকালীন গল্প  </span> </u> </p>
+				   <p>লেখকঃ<u> <span> ইমাম হোসেন </span></u> </p>
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳222.00</span></b> <span class="amount-strike"><strike>৳300.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				“বিয়াডা ভাঙ্গনের পর পরই, গ্রামে আর মাইয়াডারে রাখতে পারি নাই। আকলিমারে ঢাকায় ওর বড় বোনের বাসায় পাডাইয়া দেই। আবার পড়াশোনা শুরু করে। এ বছর বদরুন্নেসা কলেজ থাইক্কা ইন্টার পাশ করছে জিপিএ ফাইভ নিয়া। গত কাইলই মেডিকেল ভর্তি পরীক্ষার ফল দিছে। আফনেরার দোয়ায় মেয়ে আমার কুমিল্লা মেডিকেল কলেজে চান্স পাইছে।” এই ধরনের এগারোটি অনুপ্রেরণামূলক ছোট গল্প নিয়ে ইমাম হোসেনের গল্প সংকলন “দ্বিতীয় জীবন”। প্রতিটা গল্পের কাহিনীই পাঠকের কাছে পরিচিত বলে মনে হবে, যদিও একটু ভিন্ন আঙ্গিকে সাজানো। গল্পকারের সুনির্দিষ্ট বার্তা, ফুটিয়ে তুলেছেন সাহসী ও প্রতিবাদী চরিত্রগুলোকে। লেখকের সৃজনশীল ভাবনা আর জীবন ঘনিষ্ঠ চরিত্র- দুইয়ে মিলে “দ্বিতীয় জীবনকে” পরিনত করেছে এক হৃদয়গ্রাহী গল্প সমগ্রে।
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. ইমাম হোসেন
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">গুড প্যারেন্টিং : সন্তান প্রতিপালনে সফল হওয়া</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বড় হবে ঝিলমিল</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">নিয়ান</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">একটুখানি বিজ্ঞান</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+
+<!-- <h1>10th book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_252_1 (1).jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_252_1 (1).jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>গহন পথে</h3>
+
+					
+				   <p>বিষয়ঃ <u><span> উপন্যাস    </span> </u> </p>
+				   <p>লেখকঃ<u> <span> জয়দীপ দে </span></u> </p>
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳148.00</span></b> <span class="amount-strike"><strike>৳200.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. ইমাম হোসেন
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2045_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">গুড প্যারেন্টিং : সন্তান প্রতিপালনে সফল হওয়া</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বড় হবে ঝিলমিল</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">নিয়ান</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">একটুখানি বিজ্ঞান</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+<!-- <h1>11th book</h1> -->
+
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_253_1.jpg" height="380" width="100%" alt="" class="img">
+				   
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_253_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>কাসিদ</h3>
+
+					
+				   <p>বিষয়ঃ <u><span>  ইতিহাস ও ঐতিহ্য     </span> </u> </p>
+				   <p>লেখকঃ<u> <span> জয়দীপ দে </span></u> </p>
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳1370.00</span></b> <span class="amount-strike"><strike>৳500.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. ইমাম হোসেন
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2406_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2383_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বড় হবে ঝিলমিল</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2372_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">নিয়ান</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_988_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">একটুখানি বিজ্ঞান</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+
+
+<!-- <h1>12th book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_901_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_901_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>ইমোশনাল ইন্টেলিজেন্স</h3>
+
+				   <p>বিষয়ঃ <u><span>  আত্ম-উন্নয়ন      </span> </u> </p>
+				   <p>লেখকঃ<u> <span> রুশদিনা খান </span></u> </p>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳178.00</span></b> <span class="amount-strike"><strike>৳300.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. রুশদিনা খান
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1094_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1080_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বড় হবে ঝিলমিল</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1004_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">নিয়ান</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1049_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">একটুখানি বিজ্ঞান</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+<!-- <h1>13th book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_902_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_902_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>কর্পোরেট লিডারশিপ (হার্ডকভার) </h3>
+
+				   <p>বিষয়ঃ <u><span>  আত্ম-উন্নয়ন      </span> </u> </p>
+				   <p>লেখকঃ<u> <span>তৌফিকুর রহমান </span></u> </p>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount"> ৳178.00</span></b> <span class="amount-strike"><strike>৳300.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1.তৌফিকুর রহমান
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1094_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1080_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বড় হবে ঝিলমিল</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1004_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">নিয়ান</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1049_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">একটুখানি বিজ্ঞান</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+
+<!-- <h1>14th book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_982_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">নতুন বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_982_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>বঙ্গবন্ধুর কলকাতা জয় </h3>
+
+				   <p>বিষয়ঃ <u><span>   ইতিহাস ও ঐতিহ্য      </span> </u> </p>
+				   <p>লেখকঃ<u> <span> জয়দীপ দে
+
+				</span></u> </p>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				  <div>
+                <p>price: <b> <span class="amount">৳390.00</span></b> <span class="amount-strike"><strike>৳600.00</strike></span></p>
+            </div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1.তৌফিকুর রহমান
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2383_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1080_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বড় হবে ঝিলমিল</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1004_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">নিয়ান</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2003_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">একটুখানি বিজ্ঞান</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+
+<!-- <h1>15th book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1080_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">নতুন বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1080_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>বোবা শালিকের বুলি </h3>
+
+				   <p>বিষয়ঃ <u><span>   আত্ম-উন্নয়ন       </span> </u> </p>
+				   <p>লেখকঃ<u> <span> মাহাবুব আশরাফ আহাদ</span></u> </p
+
+				>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				<div>
+					<p>price: <b> <span class="amount"> ৳222.00</span></b> <span class="amount-strike"><strike>৳300.00</strike></span></p>
+				</div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				1. মাহাবুব আশরাফ আহাদ
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2383_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1080_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">বড় হবে ঝিলমিল</p>
+						  <p>price:  <span class="amount"> ৳111.00</span> <span class="amount-strike"><strike>৳1500.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1004_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">নিয়ান</p>
+						  <p>price:  <span class="amount"> ৳199.00</span> <span class="amount-strike"><strike>৳270.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2003_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">একটুখানি বিজ্ঞান</p>
+						  <p>price:  <span class="amount"> ৳296.00</span> <span class="amount-strike"><strike>৳400.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+
+<!-- <h1>16th book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_2658_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right">নতুন বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_2658_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>বেলা-অবেলা </h3>
+
+				   <p>বিষয়ঃ <u><span>   স্বাধীনতা উত্তর বাংলাদেশ        </span> </u> </p>
+				   <p>লেখকঃ<u> <span> মহিউদ্দিন আহমদ</span></u> </p
+
+				>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				<div>
+					<p>price: <b> <span class="amount"> ৳222.00</span></b> <span class="amount-strike"><strike>৳300.00</strike></span></p>
+				</div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				বাহাত্তরে একটা ধ্বংসস্তূপের মধ্যে উঠে দাঁড়াল বাংলাদেশ, শুরু হলো নবযাত্রা। সরকারের হাল ধরল আওয়ামী লীগ। এর মধ্যে দেশে অনেক ওলটপালট হয়ে গেছে। জনজীবনের স্বাভাবিক ছন্দ গেছে হারিয়ে। মানুষের আকাঙ্ক্ষা হয়েছে আকাশছোঁয়া। রাজনীতি বদলে যাচ্ছে, সমাজে চাহিদারও পরিবর্তন হচ্ছে। দেশ এগোচ্ছে টানাপোড়েনের মধ্য দিয়ে। সংসদীয় গণতন্ত্রের পাশাপাশি জন্ম নিয়েছে গোপন রাজনীতির সশস্ত্র ধারা। তিন বছর যতে না যেতেই হোঁচট খেল সংবিধান। দেশে জারি হরো জরুরি আইন, একদলীয় সরকারব্যবস্থা।পঁচাত্তরের আগস্টে ঘটল পালাবদল। হত্যা, অভ্যুত্থান আর পাল্টা অভ্যুত্থানে টালমাটাল হলো দেশ। অস্থির সেই সময়ের ছবি তুলে ধরার চেষ্টা করা হয়েছে এই বইয়ে।
+সবার প্রাপ্য মেটানোর ক্ষমতা দারিদ্র্য-পীড়িত এই দেশটির ছিল না। ক্ষমতার রাজনীতির লাগামহীন প্রতিযোগিতায় নির্বাসিত হলো গণতন্ত্র। দেশ ধেয়ে গেল অনিশ্চয়তার দিকে। পঁচাত্তরে ঘটল রক্তাক্ত পালাবদল। এ বইয়ে স্পর্শকাতর সেই সময়ের একটি ছবি পাওয়া যাবে।
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				মহিউদ্দিন আহমদ
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1264_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  
+				  
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+<!-- <h1>17th book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1049_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right"></div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1049_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>সহজ কুরআন ১ম খন্ড </h3>
+
+				   <p>বিষয়ঃ <u><span>   নতুন প্রকাশিত বই         </span> </u> </p>
+				   <p>লেখকঃ<u> <span> </span></u> </p
+
+				>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				<div>
+					<p>price: <b> <span class="amount"> ৳222.00</span></b> <span class="amount-strike"><strike>৳300.00</strike></span></p>
+				</div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				মহিউদ্দিন আহমদ
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+
+<!-- <h1>18th book</h1> -->
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1466_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right"></div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1466_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>হযরত ওসমান </h3>
+
+				   <p>বিষয়ঃ <u><span>  নবি-রাসুল, সাহাবা, তাবেই ও অলি-আওলিয়া        </span> </u> </p>
+				   <p>লেখকঃ<u> <span>মোহাম্মদ বরকতুল্লাহ্ </span></u> </p
+
+				>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				<div>
+					<p>price: <b> <span class="amount"> ৳222.00</span></b> <span class="amount-strike"><strike>৳300.00</strike></span></p>
+				</div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				মোহাম্মদ বরকতুল্লাহ্
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+
+<!-- <h1>19th book</h1> -->
+
+<!-- <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_707_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right"></div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_707_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>মহাবিশ্বের মহাবিশ্ময় </h3>
+
+				   <p>বিষয়ঃ <u><span>  ইতিহাস ও ঐতিহ্য  </span> </u> </p>
+				
+				   <p>লেখকঃ<u> <span>  </span></u> </p
+
+				>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				<div>
+					<p>price: <b> <span class="amount"> ৳222.00</span></b> <span class="amount-strike"><strike>৳300.00</strike></span></p>
+				</div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				মোহাম্মদ বরকতুল্লাহ্
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2383_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2372_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_3585_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_3583_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> -->
+
+
+
+<!-- <h1>20th book</h1> -->
+
+<section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_709_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right"> আজকের প্রকাশিত বই</div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_709_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>নারীর সুখে অসুখে </h3>
+
+				   <p>বিষয়ঃ <u><span>  ইতিহাস ও ঐতিহ্য  </span> </u> </p>
+				
+				   <p>লেখকঃ<u> <span>  </span></u> </p
+
+				>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				<div>
+					<p>price: <b> <span class="amount"> ৳222.00</span></b> <span class="amount-strike"><strike>৳300.00</strike></span></p>
+				</div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				মোহাম্মদ বরকতুল্লাহ্
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2383_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_2372_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_3585_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_3583_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">দাস্তানে মুহাম্মাদ</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section>
+
+
+
+<!-- Scripts Start -->
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Boostrap JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+</script>
+<!-- Main js -->
+<script src="assets/js/index.js"></script>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
