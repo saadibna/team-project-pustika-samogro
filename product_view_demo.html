@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> kanamachi.com</title>
+	<link rel="icon" href="demo_icon.gif" type="image/png" sizes="32x32">
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- Main Css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/75b60e16e5.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	
+<link rel="stylesheet" href="assets/css/site-1.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+    
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+</head>
+<body>
+ <div class="top-bar">
+        <div class="container">
+             <!-- <nav class="navbar navbar-expand-lg ">
+            </nav>  -->
+            <div class="top-bar-left">
+                <ul class="list-inline">
+                    <li class="dropdown flags">
+                        <i class="fas fa-phone-alt"></i> +880 163 5858 585
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="form-inline">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login </a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Registration
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Customer Registration</a>
+                          <a class="dropdown-item" href="#">Publisher Registration</a>
+                          
+                        </div>
+                      </li>
+                    <!-- <li class="icon-user">
+                        <a href=""> <span></span></a>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown"> 
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+   <header class="header header-logo-left">
+    <div class="header-wrapper">
+        <div class="container">
+            <div class="flex-row">
+                <div class="flex-col-6 flex-col-lg-auto">
+                    <!-- Logo -->
+                    <div class="logo">
+                          <a href="index.html">
+                            <img src="assets/images/logo/logo_main.png" alt="SuperShop" />
+                        </a>
+                    </div>
+                    <!-- /Logo -->
+                </div>
+                <div class="flex-col flex-order-last flex-order-lg-0">
+                  <!-- Header search -->
+                  <div class="header-search mt-4 mt-lg-0 px-xl-5">
+                    <form action="" method="post" class="header-search-from" accept-charset="UTF-8">
+						<input type="hidden" name="csrf_test_name" value="" />                             
+                        <div class="d-flex position-relative">
+                            <div class="flex-grow-1">
+                                <!-- <input class="form-control" type="text" name="query"  accept-charset="utf-8" placeholder="What Are You Looking For?"/> -->
+                                <input class="form-control" id="search" type="text" name="query" accept-charset="utf-8" />
+                            </div>
+                            <div style="display:none;">
+                                <select class=" hidden-xs" data-live-search="true" name="category" data-toggle="tooltip" title="Select">
+                                    <option value="0">All Categories</option>
+                                                            <option >ইতিহাস ও ঐতিহ্য</option>
+                                                            <option >অতিরিক্ত ছাড়</option>
+                                                            <option >প্রি অর্ডার</option>
+                                                            <option >নতুন প্রকাশিত বই</option>
+                                                            <option >অনুবাদ</option>
+                                                            <option >আত্ম-উন্নয়ন</option>
+                                                            <option >গল্প</option>
+                                                            <option >কবিতা, ছড়া ও আবৃত্তি</option>
+                                                            <option >উপন্যাস</option>
+                                                            <option >কমিক্স ও ছবির গল্প</option>
+                                                            <option >ইংরেজি ভাষার বই</option>
+                                                            <option >গণিত, বিজ্ঞান ও প্রযুক্তি</option>
+                                                            <option >নাটকের বই</option>
+                                                        </select>
+                            </div>
+                            <div>
+                            <select class="hide selectpicker header-search-select" data-live-search="true" name="type" onchange="header_search_set(this.value);" data-toggle="tooltip" title="Select">
+                                        <option value="product">Books</option>
+                                        <option value="vendor">Vendor</option>
+                                    </select>
+                            </div>
+                            <button class="shrc_btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="product_list_Section" style="display: none;">
+                            <div class="custom_preloader" style="display:none;">
+                                <div class="loading">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div id="no-search-data" style="display: none">
+                                <img src="uploads/others/no-data1.png" alt="no data">
+                            </div>
+                            <ul class="list-group form-section search_result_list" style="display: none;"> </ul>
+                        </div>
+                        
+                        </form>
+                    </div>
+                    <!-- /Header search -->
+                </div>
+                <div class="flex-col-6 flex-col-lg-auto text-right">
+                    <!-- Header shopping cart -->
+                    <div class="header-cart">
+                        <div class="cart-wrapper">
+                            <a href="" class="btn btn-theme-transparent" id="compare_tooltip" data-toggle="tooltip" data-original-title="0" data-placement="right">
+                                <i class="fas fa-exchange"></i>
+                                <span class="hidden-md hidden-sm hidden-xs">Compare</span>
+                                (
+                                <span id="compare_num">
+                                    0                                </span>
+                                )
+                            </a>
+                            <a href="#" class="btn btn-theme-transparent" data-toggle="modal" data-target="#popup-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="hidden-xs">
+                                    <span class="cart_num"></span>
+                                    Item(s)
+                                </span>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <!-- Mobile menu toggle button -->
+                            <a href="#" class="menu-toggle btn btn-theme-transparent"><i class="fa fa-bars"></i></a>
+                            <!-- /Mobile menu toggle button -->
+                        </div>
+                    </div>
+                    <!-- Header shopping cart -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-wrapper">
+        <div class="container">
+            <!-- Navigation -->
+                <nav class="navigation closed clearfix">
+                <a href="#" class="menu-toggle-close btn"><i class="fa fa-times"></i></a>
+                <ul class="nav sf-menu">
+                    <li class="active" >
+                        <a href="index.html"> হোম পেইজ  </a>
+                    </li>
+                    <li class="hidden-sm hidden-xs ">
+                            <a href="">
+                                বিষয়                            </a>
+                            <ul class="sub-dropdown" style="min-width: max-content;;background: rgb(255, 255, 255);    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                                                                        <li>
+                                            <a href="">
+                                                ইতিহাস ও ঐতিহ্য                                            </a>
+                                        </li>
+                                                                        <li>
+                                            <a href="">
+                                                অতিরিক্ত ছাড়                                            </a>
+                                        </li>
+                                                                        <li>
+                                            <a href="">
+                                                প্রি অর্ডার                                            </a>
+                                        </li>
+                                                                        <li>
+                                            <a href="">
+                                                নতুন প্রকাশিত বই                                            </a>
+                                        </li>
+                                                                        <li>
+                                            <a href="">
+                                                অনুবাদ                                            </a>
+                                        </li>
+                                                                        <li>
+                                            <a href="">
+                                                আত্ম-উন্নয়ন                                            </a>
+                                        </li>
+                                                                        <li>
+
+                                                    </ul>
+                    </li>
+                    <li class="hide hidden-lg hidden-md ">
+                        <a href="">
+                            All Sub Categories                        </a>
+                    </li>
+                                                    <li >
+                                    <a href="publisher.html">
+                                        প্রকাশনী                                    </a>
+                                </li>
+                                                                        <li >
+                                    <a href="author.html">
+                                        লেখক                                    </a>
+                                </li>
+                                                                    <!--<li >
+                        <a href="">
+                            লেখক                        </a>
+                    </li>-->
+                                                                <li class="">
+                            <a href="">
+                                নতুন সংগ্রহ                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="">
+                                আজকের বই                            </a>
+                        </li>
+                                                                    <!-- <li >
+                        <a href="">
+                            সিরিজ কালেকশন                         </a>
+                    </li> -->
+                                        
+                    <!--                    <li >
+                        <a href="">
+                            প্রকাশনী                        </a>
+                    </li>
+                    -->
+                    <li class="hide hidden-lg hidden-md ">
+                        <a href="#">
+                            Blogs                        </a>
+                        <ul>
+                                                            <li>
+                                    <a href="">
+                                        Health                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="">
+                                        Beauty                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="">
+                                        Sports                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="">
+                                        Foods and beverages                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="">
+                                        Science & Tech                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="">
+                                        Electronic                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                                                <li >
+                            <a href="contact.html">
+                                যোগাযোগ                            </a>
+                        </li>
+                                            <li>
+                            <a href="#">
+                                অন্যান্য                            </a>
+                            <ul>
+                            <li class="">
+                                        <a href="">
+                                            Latest Books                                        </a>
+                                    </li>
+                                                                <!---->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                সখ এবং সংগ্রহ                            </a>
+                            <ul>
+                                                                    <li class="">
+                                        
+                                        <a href="#">
+                                            ডাক টিকিট                                        </a>
+                                    </li>
+                                                                                                    <li class="">
+                                      
+                                        <a href="#">
+                                            মুদ্রা ও টাকা                                        </a>
+                                    </li>
+                                                                
+                            </ul>
+                        </li>
+                       
+                                    </ul>
+            </nav>
+            <!-- /Navigation -->
+        </div>
+    </div>
+</header>
+  <section class="book-section">
+	<div class="container back">
+
+		<div class="row">
+			<div class="col-md-4 color">
+				
+               <div class="img-sec">
+				   <img src="assets/images/product_1049_1.jpg" height="380" width="100%" alt="" class="img">
+				   <div class="top-right"></div>
+			   </div>
+				
+			
+			        <div>
+				   <img src="assets/images/product_1049_1.jpg" height="80" width="80" alt="" class="img2">
+			   </div>
+			</div>
+			<div class="col-md-8 colorn">
+               <div class="bela-obela">
+				   <h3>Demo </h3>
+
+				   <p>বিষয়ঃ <u><span>   নতুন প্রকাশিত বই         </span> </u> </p>
+				   <p>লেখকঃ<u> <span> </span></u> </p
+
+				>
+					
+				  
+			   </div>
+			   <hr class="hr">
+			   <div class="d-flex price">
+				<div>
+					<p>price: <b> <span class="amount"> ৳222.00</span></b> <span class="amount-strike"><strike>৳300.00</strike></span></p>
+				</div> 
+            <div class="discount"><input class="count" type="button" value="Discount 26%"></div>
+			   </div>
+			   
+               <div class="increment">
+				   <p>
+					 <button id="minus" onclick="decrease()">-</button>
+					 <input id="inputVal" type="number" value="0">
+					 <button id="plus" onclick="increase()">+</button></p>
+					 <h1 id="output">Total:</h1>
+					</div>
+
+               <div class="btn-middle">
+                   <button class="btn-success"> একটু পড়ে দেখুন </button>
+               </div>
+               <div class="d-flex main">
+                   <div class="first_btn">
+                      <button class="button1"><i class="fas fa-shopping-cart"></i>
+                          Add to Cart</button> 
+                   </div>
+
+                   <div class="second_btn">
+					<button class="button2"><i class="fa fa-heart" style="color:#EE6E73"></i>Add to Wishlist</button>
+                   </div>
+               </div>
+
+			 <div class="social-link">
+				<div class="d-flex gap">
+					<i class="fab fa-facebook-f "></i>
+					<i class="fab fa-google"></i>
+					 <i class="fab fa-twitter "></i>
+					
+					<i class="fab fa-linkedin"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-skype"></i>
+					<i class="fab fa-stumbleupon"></i>
+					<i class="fab fa-digg"></i>  
+			   </div>
+			</div>
+			</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="more book-section">
+<div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active ‍" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Book Summary</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Specification</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Authors Bio</a>
+				
+			  </div>
+			</nav>
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<table class="table table-striped">
+					
+					<div class="fotter">
+					  <tr class="success">
+						<th scope="row">বইয়ের নামঃ</th>
+						<td>মা</td>
+						
+					  </tr>
+					  <tr class="info">
+						<th scope="row">লেখকঃ</th>
+						<td class="text-danger"><u> <span>মাক্সিম গোর্কি</span> </u></td>
+						
+					  </tr>
+					  <tr class="abc">
+						<th scope="row">প্রকাশনীঃ</th>
+						<td> <u> <span> বিশ্বসাহিত্য কেন্দ্র</span></u></td>
+						
+							</tr>
+							<tr class="mash">
+								<th scope="row">Edition:</th>
+								<td>9th Printed, 2017</td>
+								
+									</tr>
+									<tr class="ruba">
+										<th scope="row">ISBN Number:</th>
+										<td>9841801477</td>
+										
+											</tr>
+											<tr class="bini">
+												<th scope="row">Total Page</th>
+												<td>	288</td>
+												
+													</tr>
+						</div>
+						</table>
+			  </div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				মহিউদ্দিন আহমদ
+			  </div>
+			 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div>
+	
+	<div class="container">
+		<h3>Related books</h3>
+		<div class="row ">
+			<div class="card-deck">
+				<div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">Demo</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">Demo</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">Demo</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  <div class="col col-lg-3">
+					<div class="card">
+						<img class="card-img-top" src="assets/images/product_1219_1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-title">Demo</p>
+						  <p>price:  <span class="amount"> ৳185.00</span> <span class="amount-strike"><strike>৳250.00</strike></span></p>
+						  
+						</div>
+					  </div>
+				  </div>
+				  
+			  </div>
+	     </div>
+	  </div>
+  </div>
+ </div>
+
+	
+</div>
+</section> 
+<footer class="bg-white  text-dark">
+        <!-- Grid container -->
+        <div class="container p-4">
+          
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="index.html">
+                  <img src="assets/images/logo-footer.png" alt="logo-footer" class="mb-4">
+                </a>
+                <p class="write">"ক্রেতা নয় পাঠক চাই" এই প্রতিপাদ্যকে সামনে রেখে নতুন ধারণার অনলাইন বুকশপ 
+                  ‘কানামাছি ডট কম’ এর আত্মপ্রকাশ। ‘কানামাছি ডট কম’ হতে চায় পাঠকের একটি আস্থার নাম।
+                   দ্রুততম সময়ে স্বাচ্ছন্দ্য সেবাদানই 'কানামাছি ডট কম' লক্ষ্য। এ যাত্রায় আপনাকে সাথে পাবার আশা রাখি।</p>
+      
+                  <!-- Section: Form -->
+          <section class="">
+            <form action="">
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                
+                <!--Grid column-->
+      
+                <!--Grid column-->
+                <div class=" col-12">
+                  <!-- Email input -->
+                  <div class="input-group mb-3 ">
+                    <input type="text" class="form-control" id="subs" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <span class="btn btn-outline-secondary" id="basic-addon2">Subscribe</span>
+                    </div>
+                  </div>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </form>
+          </section>
+          <!-- Section: Form -->
+      
+      
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+                    <h5 class="text-uppercase write2">CATEGORIES</h5>
+                    <hr class="hr">
+                <ul class="list-unstyled write underline mb-0">
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i> <a href="#!" class="text-dark ">নতুন প্রকাশিত বই</a>
+                    
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i> <a href="#!" class="text-dark"> গল্প</a>
+                   
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i> <a href="#!" class="text-dark">উপন্যাস</a>
+                   
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i> <a href="#!" class="text-dark">মুক্তিযুদ্ধ</a>
+                   
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i> <a href="#!" class="text-dark">রাজনীতি</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i> <a href="#!" class="text-dark">জীবনী ও সাক্ষাৎকার </a>
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i> <a href="#!" class="text-dark">বেস্ট সেলার বই</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i><a href="#!" class="text-dark">সায়েন্স ফিকশন</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase write2">USEFUL Links</h5>
+                <hr class="hr">
+                <ul class="list-unstyled br write underline mb-0">
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i><a href="#!" class="text-dark">Home</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i><a href="#!" class="text-dark">All Books</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i><a href="#!" class="text-dark">Todays Deal Books
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i><a href="#!" class="text-dark">All Featured Books
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i><a href="#!" class="text-dark">All Publishers
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i><a href="#!" class="text-dark">All Authors
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa fa-arrow-circle-right"></i><a href="#!" class="text-dark">Contact
+      
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase write2">CONTACT US</h5>
+                <hr class="hr">
+                <ul class="list-unstyled write mb-0">
+                  <p class="text-dark">
+                    <i class="fa fa-home"></i><b>Address:</b>
+                      Flat-B-5, House-23,Road-13,Block-G, Niketan, Gulshan-1,Dhaka-1212
+                    </p>
+                  <p class="text-dark">
+                    <i class="fa fa-phone"></i><b>Phone:</b>
+                      +8801729452079,+8801641863571,+88029668736
+                    </p>
+                  <p>
+                    <i class="fa fa-globe"></i><b>Website:</b>
+                    <a href="#!" class="text-dark"> https://kanamachhi.com/</a>
+                    </p>
+                  <p class="text-dark">
+                    <i class="fa fa-envelope"></i><b>Email:</b>
+                      kanamachhi.com@gmail.com</p>
+                    </p>
+                </ul>
+                <ul class="social"> 
+                  <li class="facebook">
+                  <a href="#" class="fa fa-facebook"></a>
+                  </li>
+                  <li class="twitter">
+                  <a href="#" class="fa fa-twitter"></a>
+                  </li>
+                  <li class="youtube">
+                  <a href="#" class="fa fa-youtube"></a>
+                  </li>
+                  <li class="pinterest">
+                  <a href="#" class="fa fa-pinterest"></a>
+                  </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-left p-3" style="background-color:#c45223;">
+          <div class="text-white container">
+           2021 © All Rights Reserved
+             @ Best online Book Shop in Bangladesh -
+            কানামাছি ডট কম | Terms & Condition | Privacy Policy
+          </div>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+<!-- Scripts Start -->
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Boostrap JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+</script>
+<!-- Main js -->
+<script src="assets/js/index.js"></script>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
