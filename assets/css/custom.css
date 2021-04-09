@@ -253,14 +253,15 @@
 }
 .login{
     padding: 50px;
-    margin-left: 20px;
+ 
 
 }
 .btn-login{
-    width: 60%;
-    background-color: #303748;
-    border-color: #303748;
-    color: #ffffff;
+    width: 100%;
+    margin-left: 0px !important;
+    background-color: #303748 !important;
+    border-color: #303748 !important;
+    color: #ffffff !important;
 }
 .form-group{
     width: 60%;
