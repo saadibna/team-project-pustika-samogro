@@ -269,8 +269,8 @@
 }
 .btn-login:hover{
     background-color: #c45223 !important;
-    border-color: #c45223 !important;
-    color: #ffffff !important;
+    border-color: #c45223 ;
+    color: #ffffff ;
 }
 .login-right{
     padding: 50px;
