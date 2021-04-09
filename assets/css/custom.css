@@ -278,3 +278,9 @@
     color:#c45223;
     border:1px solid;
 }
+.shrc_btn .fa{
+    padding: 0px;
+}
+.btn-theme-transparent .fa{
+padding:0px;
+}
