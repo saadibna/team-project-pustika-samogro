@@ -1,0 +1,320 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eef0f5;
+}
+
+.img-sec{
+    position: relative;
+    text-align: center;
+    color:black;
+}
+
+.top-right{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    margin-top: 10px;
+    border:3px solid black ;
+    height: 25px;
+  }
+  span{
+    color: #C45223;
+}
+.back{
+    background-color: white;
+    margin-top: 10px;
+}
+
+.img{
+    margin-top: 15px;
+}
+.img2{
+    margin-top: 10px;
+}
+.bela-obela{
+    margin-top: 10px;
+}
+.amount{
+    font-weight: 500px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(236, 16, 16);
+}
+.amount-strike{
+    margin-left: 10px;
+    font-size: smaller;
+}
+h3{
+    font-size: 22px;
+}
+.main{
+     margin-top: 15px;
+
+}
+.second_btn{
+    margin-left: 10px;
+}
+.discount{
+    margin-left: 14px;
+}
+.fa-heart{
+    color: red;
+}
+.count{
+    border: none;
+    outline: none;
+    background-color: #5CB85C;
+    border-radius: 3px;
+   height: 25px;
+   margin-top: 6px;
+   padding-bottom:9px;
+   padding-top: .5px;
+   text-align: center;
+   color: white;
+  
+}
+.increment{
+    margin-bottom: 10px;
+}
+#minus{
+background-color: #c45223;
+height: 30.1px;
+width: 45px;
+color: #ffffff;
+border: 1px solid #c45223;
+margin-right: -12px;
+
+}	
+#plus{
+    background-color: #c45223;
+    height: 30px;
+    width: 45px;
+    color: #ffffff;
+    border: 1px solid #c45223;
+margin-left: -30px;
+    }
+    #inputVal{
+        text-align: center;
+    }
+    .button1{
+        border: 1px solid #c45223;
+        background: #c45223;
+        color: #ffffff;
+        padding: 6px 15px;
+        font-size: 12px;
+        margin-right: 1px;
+        font-weight: 800;
+        border-radius: 4px;
+        }
+        .button2{
+        border: 1px solid #ee6e73;
+        background-color:#EE6E73;
+        color: #ffffff;
+        padding:  6px 15px;
+        font-size: 12px;
+        font-weight: 800;
+        border-radius: 4px;
+        }
+        .fa{
+        color: white;
+        }
+        .button1:hover{
+        
+        color: #c45223;
+        background-color: #ffffff;
+        }
+        
+        
+        .button2:hover{
+        background-color:white;	
+        color: #EE6E73;
+        }
+        
+        .first_btn{
+        margin-right:3px;
+        }
+        
+        .second_btn{
+        margin:0;
+         }
+         #output{
+             width:150px;
+             border:1px solid green;
+             background-color: #f0410c;
+             margin-top: 1px;
+             color: white;
+             border-radius: 3px;
+             font-size: 24px;
+             text-align: center;
+             border: none;
+            outline: none;
+            float: left;
+           margin-right: 10px;
+         }
+ .social-link{
+    margin-top: 15px;
+float: left;
+}
+
+    .gap{
+    column-gap:5px;
+    
+}  
+
+ .fa-facebook-f{
+    width: 30px;
+    height: 30px;
+    background:rgb(55, 55, 182);
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+    border-radius: 2px;
+   
+} 
+.fa-google{
+    width: 30px;
+    height: 30px;
+    background:#cc4308;;
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+ .fa-twitter{
+    width: 30px;
+    height: 30px;
+    background:rgb(22, 160, 160);
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+.fa-linkedin{
+    width: 30px;
+    height: 30px;
+    background:rgb(95, 95, 151);
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+.fa-tumblr{
+    width: 30px;
+    height: 30px;
+    background:#46445a;;
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+.fa-skype{
+    width: 30px;
+    height: 30px;
+    background:#00AFF0;
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+.fa-stumbleupon{
+    width: 30px;
+    height: 30px;
+    background:#e61a1a;;
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+.fa-digg{
+    width: 30px;
+    height: 30px;
+    background:#4117a3;;
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+    border-radius: 2px;
+} 
+ 
+.fa-facebook-f:hover{
+    background-color: rgb(107, 83, 83);
+   transform: translateY(-2px);  
+}
+.fa-google:hover{
+    transform: translateY(-2px);
+    background-color: #757575;
+}
+.fa-twitter:hover{
+    transform: translateY(-2px);
+    background-color: #818181;
+}
+.fa-linkedin:hover{
+    transform: translateY(-2px);
+    background-color: #606060;
+}
+.fa-tumblr:hover{
+    transform: translateY(-2px);
+    background-color: #5D5D5D;
+}
+.fa-skype:hover{
+    transform: translateY(-2px);
+    background-color: #757575;
+}
+.fa-stumbleupon:hover{
+    transform: translateY(-2px);
+    background-color: #757575;
+}
+.fa-digg:hover{
+    transform: translateY(-2px);
+    background-color: #484848;
+}
+
+
+.success{
+    background-color:#dff0d8 ;
+}
+.info{
+background-color: #d9edf7;
+}
+.abc{
+    background-color: #fcf8e3
+}
+.mash{
+    background-color: #dff0d8;
+}
+.ruba{
+background-color: #f2dede;
+}
+.bini{
+background-color: #dff0d8;
+}
+h4{
+    margin-top: 20px;
+    margin-left: 110px;  
+}
+.img3{
+    margin-top: 20px;
+    margin-left: 110px;
+   
+}
+.img4{
+    margin-top: 20px; 
+}
+.img5{
+    margin-top: 20px;   
+}
+.img6{
+    margin-top: 20px;      
+}
+.img7{
+    margin-top: 20px;   
+}
+.img8{
+    margin-top: 20px;   
+}
+                      
+
+
+
+                      
