@@ -257,7 +257,7 @@
 
 }
 .btn-login{
-    
+    withd:100%;
     margin-left: 0px !important;
     background-color: #303748 !important;
     border-color: #303748 !important;
@@ -268,9 +268,9 @@
     
 }
 .btn-login:hover{
-    background-color: #c45223;
-    border-color: #c45223;
-    color: #ffffff;
+    background-color: #c45223 !important;
+    border-color: #c45223 !important;
+    color: #ffffff !important;
 }
 .login-right{
     padding: 50px;
