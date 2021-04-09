@@ -5305,7 +5305,7 @@ ul.sub-dropdown {
   .cart-wrapper {
     float: none !important;
     margin-left: 0;
-    display: inline-flex;
+/*     display: inline-flex; */
   }
 }
 .cart-wrapper .btn {
